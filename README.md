@@ -8,7 +8,7 @@
 
 * In this phase, the new requirement is that any user that has successfully logged in using basic authentication (username and password) is able to continuously authenticate … using a “token”
 
-Deployed production server: [Heroku - RDBALL Basic Auth](https://rball-basic-auth.herokuapp.com/)
+Deployed production server: [Heroku - RDBALL Bearer Auth](https://rdball-bearer-auth.herokuapp.com/)
 
 ---
 Requirements:
