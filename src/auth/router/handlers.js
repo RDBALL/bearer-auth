@@ -41,7 +41,7 @@ async function handleGetUsers(req, res, next) {
 }
 
 function handleSecret(req, res, next) {
-  res.status(200).send('Welcome to the secret area!');
+  res.status(200).send('Here is the big secret: RDBALL 401d48 Lab07');
 }
 
 module.exports = {
