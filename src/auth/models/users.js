@@ -38,8 +38,8 @@ const userSchema = (sequelize, DataTypes) => {
   // Bearer AUTH: Validating a token
   model.authenticateToken = async function (token) {
     try {
-      const parsedToken = jwt.verify(token, SECRET);
-      const user = await this.findOne({where: { username: parsedToken.username }});
+      const payload = jwt.verify(token, SECRET);
+      const user = await this.findOne({where: { username: payload.username }});
       if (user) { return user; }
       throw new Error('User Not Found');
     } catch (e) {
